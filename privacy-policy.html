@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chính Sách Bảo Mật – BookStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-hotline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        Hotline: <a href="tel:18006236">1800 6236</a>
+      </span>
+      <a href="index.html">Cửa hàng</a>
+      <a href="about.html">Giới thiệu</a>
+    </div>
+    <div class="topbar-right">
+      <a href="return-policy.html">Chính sách đổi trả</a>
+      <a href="order-lookup.html">Tra cứu đơn hàng</a>
+      <a href="login-register.html">Đăng nhập</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-inner">
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div>
+    </a>
+    <div class="header-search">
+      <input type="text" placeholder="Tìm kiếm sách, tác giả, nhà xuất bản..." autocomplete="off"/>
+      <button class="search-btn" aria-label="Tìm kiếm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>
+      </button>
+    </div>
+    <div class="header-icons">
+      <a href="login-register.html" class="header-icon-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+        <span>Tài khoản</span>
+      </a>
+      <a href="cart.html" class="header-icon-btn" style="position:relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        <span class="cart-badge" style="display:none">0</span>
+        <span>Giỏ hàng</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-item">
+      <a href="index.html" class="nav-link active">🏠 Trang chủ</a>
+    </div>
+    <div class="nav-item">
+      <a href="category.html" class="nav-link">
+        📚 Sách
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+      </a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h4>Văn học</h4>
+          <a href="category.html">Tiểu thuyết</a>
+          <a href="category.html">Truyện ngắn</a>
+          <a href="category.html">Thơ ca</a>
+          <a href="category.html">Văn học dịch</a>
+          <a href="category.html">Văn học Việt Nam</a>
+        </div>
+        <div class="mega-col">
+          <h4>Kinh tế - Kinh doanh</h4>
+          <a href="category.html">Quản trị kinh doanh</a>
+          <a href="category.html">Marketing</a>
+          <a href="category.html">Tài chính - Kế toán</a>
+          <a href="category.html">Khởi nghiệp</a>
+          <a href="category.html">Phát triển bản thân</a>
+        </div>
+        <div class="mega-col">
+          <h4>Thiếu nhi</h4>
+          <a href="category.html">Truyện tranh</a>
+          <a href="category.html">Truyện cổ tích</a>
+          <a href="category.html">Sách tô màu</a>
+          <a href="category.html">Học tiếng Anh</a>
+        </div>
+        <div class="mega-col">
+          <h4>Khoa học</h4>
+          <a href="category.html">Công nghệ thông tin</a>
+          <a href="category.html">Y học</a>
+          <a href="category.html">Tâm lý học</a>
+          <a href="category.html">Lịch sử</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="flash-sale.html" class="nav-link" style="color:var(--red);font-weight:700">⚡ Flash Sale</a>
+    </div>
+    <div class="nav-item">
+      <a href="#" class="nav-link">
+        🎁 Combo tiết kiệm
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+      </a>
+      <div class="simple-dropdown">
+        <a href="#">Combo 2 cuốn</a>
+        <a href="#">Combo 3 cuốn</a>
+        <a href="#">Combo tặng kèm</a>
+      </div>
+    </div>
+    <div class="nav-item"><a href="blog.html" class="nav-link">✍️ Blog sách</a></div>
+    <div class="nav-item"><a href="about.html" class="nav-link">ℹ️ Giới thiệu</a></div>
+    <div class="nav-item"><a href="contact.html" class="nav-link">📞 Liên hệ</a></div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <h3>📚 BookStore Menu</h3>
+    <button class="mobile-close">✕</button>
+  </div>
+  <div class="mobile-menu-items">
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="category.html">📚 Tất cả sách</a>
+    <a href="flash-sale.html">⚡ Flash Sale</a>
+    <a href="cart.html">🛒 Giỏ hàng</a>
+    <a href="blog.html">✍️ Blog sách</a>
+    <a href="about.html">ℹ️ Giới thiệu</a>
+    <a href="contact.html">📞 Liên hệ</a>
+    <a href="login-register.html">👤 Đăng nhập</a>
+  </div>
+</div>
+
+  <!-- PAGE HERO -->
+  <div class="privacy-hero">
+    <div class="container">
+      <div class="privacy-hero-inner">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb" style="color:rgba(255,255,255,0.6); margin-bottom:14px;">
+          <a href="index.html" style="color:rgba(255,255,255,0.6);">Trang chủ</a>
+          <span class="breadcrumb-sep" style="color:rgba(255,255,255,0.3);">›</span>
+          <span style="color:rgba(255,255,255,0.9);">Chính Sách Bảo Mật</span>
+        </div>
+        <h1>🔒 Chính Sách Bảo Mật</h1>
+        <p>BookStore cam kết bảo vệ thông tin cá nhân của quý khách theo các tiêu chuẩn bảo mật cao nhất. Chính sách này mô tả cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu của bạn.</p>
+        <div class="privacy-hero-meta">
+          <span>📅 Có hiệu lực từ: 01/01/2025</span>
+          <span>🔄 Cập nhật lần cuối: 15/04/2025</span>
+          <span>📋 Phiên bản: 2.1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="privacy-layout">
+
+      <!-- ============================================================
+           SIDEBAR TABLE OF CONTENTS
+           ============================================================ -->
+      <aside class="privacy-toc" aria-label="Mục lục nhanh">
+        <div class="privacy-toc-header">
+          📑 Mục Lục Nhanh
+        </div>
+        <nav>
+          <a class="toc-link active" onclick="scrollToSection('sec1')">
+            <span class="toc-num">1</span>Giới thiệu
+          </a>
+          <div class="toc-divider"></div>
+          <a class="toc-link" onclick="scrollToSection('sec2')">
+            <span class="toc-num">2</span>Mục đích thu thập
+          </a>
+          <div class="toc-divider"></div>
+          <a class="toc-link" onclick="scrollToSection('sec3')">
+            <span class="toc-num">3</span>Phạm vi thu thập
+          </a>
+          <div class="toc-divider"></div>
+          <a class="toc-link" onclick="scrollToSection('sec4')">
+            <span class="toc-num">4</span>Thời gian lưu trữ
+          </a>
+          <div class="toc-divider"></div>
+          <a class="toc-link" onclick="scrollToSection('sec5')">
+            <span class="toc-num">5</span>Chia sẻ thông tin
+          </a>
+          <div class="toc-divider"></div>
+          <a class="toc-link" onclick="scrollToSection('sec6')">
+            <span class="toc-num">6</span>Quyền của khách hàng
+          </a>
+          <div class="toc-divider"></div>
+          <a class="toc-link" onclick="scrollToSection('sec7')">
+            <span class="toc-num">7</span>Liên hệ & hỗ trợ
+          </a>
+        </nav>
+        <div class="toc-updated">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+          Cập nhật: 15/04/2025
+        </div>
+      </aside>
+
+      <!-- ============================================================
+           MAIN CONTENT AREA
+           ============================================================ -->
+      <main class="privacy-content" id="privacyMain">
+
+        <!-- Important Alert -->
+        <div class="privacy-alert" role="alert">
+          <div class="privacy-alert-icon">🛡️</div>
+          <div class="privacy-alert-body">
+            <h4>Cam kết bảo mật tuyệt đối của BookStore</h4>
+            <p>BookStore <strong>tuyệt đối không bán, cho thuê hoặc trao đổi</strong> thông tin cá nhân của khách hàng với bất kỳ bên thứ ba nào vì mục đích thương mại. Bằng việc sử dụng dịch vụ, bạn đồng ý với chính sách này. Nếu không đồng ý, vui lòng ngừng sử dụng và liên hệ với chúng tôi để xóa dữ liệu.</p>
+          </div>
+        </div>
+
+        <!-- ---- Section 1: Giới thiệu ---- -->
+        <section class="privacy-section" id="sec1">
+          <div class="privacy-section-header">
+            <div class="privacy-section-num">1</div>
+            <div class="privacy-section-title-group">
+              <h2>Giới Thiệu & Cam Kết Bảo Mật</h2>
+              <span class="section-sub">Introduction &amp; Privacy Commitment</span>
+            </div>
+          </div>
+
+          <p>Chào mừng bạn đến với <strong>BookStore</strong> – nhà sách trực tuyến hàng đầu Việt Nam. Chúng tôi hiểu rằng thông tin cá nhân của bạn là tài sản riêng tư và quan trọng. Vì vậy, BookStore cam kết xây dựng và duy trì một môi trường mua sắm trực tuyến an toàn, đáng tin cậy.</p>
+
+          <p>Chính sách Bảo mật này áp dụng cho toàn bộ dịch vụ của BookStore, bao gồm website, ứng dụng di động và mọi kênh giao tiếp chính thức khác. Chúng tôi tuân thủ đầy đủ các quy định về bảo vệ dữ liệu cá nhân theo Nghị định 13/2023/NĐ-CP của Chính phủ Việt Nam.</p>
+
+          <div class="note-box">
+            <strong>📌 Lưu ý:</strong> Khi bạn đặt hàng, đăng ký tài khoản hoặc liên hệ với chúng tôi, bạn mặc nhiên đồng ý với các điều khoản được mô tả trong chính sách này. Chúng tôi có thể cập nhật chính sách định kỳ – mọi thay đổi quan trọng sẽ được thông báo qua email đăng ký.
+          </div>
+
+          <h3>Nguyên tắc bảo mật cốt lõi</h3>
+          <ul>
+            <li>Thu thập thông tin tối thiểu, chỉ những gì thực sự cần thiết cho dịch vụ</li>
+            <li>Sử dụng thông tin đúng mục đích đã công bố, không lạm dụng hoặc sai mục đích</li>
+            <li>Bảo vệ dữ liệu bằng các biện pháp kỹ thuật và tổ chức phù hợp</li>
+            <li>Tôn trọng và tạo điều kiện để khách hàng thực hiện các quyền của mình</li>
+            <li>Minh bạch và rõ ràng trong mọi hoạt động xử lý dữ liệu</li>
+          </ul>
+        </section>
+
+        <!-- ---- Section 2: Mục đích thu thập ---- -->
+        <section class="privacy-section" id="sec2">
+          <div class="privacy-section-header">
+            <div class="privacy-section-num">2</div>
+            <div class="privacy-section-title-group">
+              <h2>Mục Đích Thu Thập Thông Tin</h2>
+              <span class="section-sub">Purpose of Data Collection</span>
+            </div>
+          </div>
+
+          <p>BookStore thu thập thông tin cá nhân của khách hàng với các mục đích cụ thể, rõ ràng và hợp pháp. Chúng tôi chỉ xử lý dữ liệu khi có căn cứ pháp lý phù hợp.</p>
+
+          <h3>🛒 Xử lý đơn hàng & giao hàng</h3>
+          <ul>
+            <li>Xác nhận và xử lý các đơn đặt hàng của bạn một cách chính xác và kịp thời</li>
+            <li>Liên hệ xác nhận thông tin đơn hàng, địa chỉ giao hàng và thời gian nhận hàng</li>
+            <li>Phối hợp với đối tác vận chuyển để giao hàng đúng địa điểm và thời gian</li>
+            <li>Giải quyết các vấn đề phát sinh trong quá trình vận chuyển</li>
+          </ul>
+
+          <h3>💬 Chăm sóc & hỗ trợ khách hàng</h3>
+          <ul>
+            <li>Phản hồi các yêu cầu, thắc mắc và khiếu nại của bạn về sản phẩm hoặc dịch vụ</li>
+            <li>Hỗ trợ đổi trả hàng, hoàn tiền và bảo hành theo chính sách hiện hành</li>
+            <li>Ghi nhận lịch sử mua hàng để cung cấp dịch vụ cá nhân hóa tốt hơn</li>
+            <li>Nâng cao chất lượng dịch vụ dựa trên phản hồi và đánh giá của khách hàng</li>
+          </ul>
+
+          <h3>📧 Tiếp thị & thông báo khuyến mãi</h3>
+          <ul>
+            <li>Gửi email thông báo về các ưu đãi, Flash Sale và sách mới theo đăng ký tự nguyện</li>
+            <li>Cá nhân hóa các gợi ý sách phù hợp với sở thích và lịch sử đọc của bạn</li>
+            <li>Thông báo về các sự kiện đặc biệt như Ngày sách Việt Nam, Book Fair</li>
+          </ul>
+
+          <div class="note-box">
+            <strong>⚙️ Quyền từ chối tiếp thị:</strong> Bạn có thể hủy đăng ký nhận email tiếp thị bất kỳ lúc nào bằng cách nhấn "Hủy đăng ký" ở cuối email hoặc liên hệ trực tiếp với chúng tôi. Việc hủy đăng ký tiếp thị không ảnh hưởng đến dịch vụ mua hàng của bạn.
+          </div>
+        </section>
+
+        <!-- ---- Section 3: Phạm vi thu thập ---- -->
+        <section class="privacy-section" id="sec3">
+          <div class="privacy-section-header">
+            <div class="privacy-section-num">3</div>
+            <div class="privacy-section-title-group">
+              <h2>Phạm Vi Thu Thập Thông Tin</h2>
+              <span class="section-sub">Scope of Data Collection</span>
+            </div>
+          </div>
+
+          <p>Chúng tôi thu thập các loại thông tin cần thiết sau đây khi bạn sử dụng dịch vụ của BookStore:</p>
+
+          <h3>👤 Thông tin nhận dạng cá nhân</h3>
+          <ul>
+            <li><strong>Họ và tên đầy đủ</strong> – để xác nhận danh tính và cá nhân hóa trải nghiệm</li>
+            <li><strong>Địa chỉ email</strong> – để liên lạc, xác nhận tài khoản và gửi thông báo đơn hàng</li>
+            <li><strong>Số điện thoại</strong> – để xác nhận đơn hàng và liên hệ khi cần thiết</li>
+            <li><strong>Ngày sinh (tùy chọn)</strong> – để gửi ưu đãi sinh nhật và phân loại độ tuổi</li>
+          </ul>
+
+          <h3>📦 Thông tin giao hàng</h3>
+          <ul>
+            <li><strong>Địa chỉ giao hàng đầy đủ</strong> – số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố</li>
+            <li><strong>Ghi chú giao hàng</strong> – hướng dẫn đặc biệt cho shipper nếu có</li>
+          </ul>
+
+          <h3>💳 Thông tin thanh toán</h3>
+          <ul>
+            <li>Dữ liệu thanh toán được xử lý trực tiếp bởi cổng thanh toán có chứng chỉ PCI DSS</li>
+            <li>BookStore <strong>không lưu trữ</strong> số thẻ tín dụng/ATM, mã CVV hay thông tin tài khoản ngân hàng đầy đủ</li>
+            <li>Chỉ lưu thông tin giao dịch (mã giao dịch, số tiền, thời gian) để đối soát</li>
+          </ul>
+
+          <h3>🌐 Dữ liệu kỹ thuật & hành vi</h3>
+          <ul>
+            <li>Địa chỉ IP, loại thiết bị, hệ điều hành và trình duyệt web</li>
+            <li>Lịch sử tìm kiếm, trang đã xem và sản phẩm đã quan tâm trên website</li>
+            <li>Dữ liệu Cookie và các công nghệ theo dõi tương tự (xem Chính sách Cookie)</li>
+          </ul>
+        </section>
+
+        <!-- ---- Section 4: Thời gian lưu trữ ---- -->
+        <section class="privacy-section" id="sec4">
+          <div class="privacy-section-header">
+            <div class="privacy-section-num">4</div>
+            <div class="privacy-section-title-group">
+              <h2>Thời Gian Lưu Trữ Thông Tin</h2>
+              <span class="section-sub">Data Retention Period</span>
+            </div>
+          </div>
+
+          <p>BookStore chỉ lưu trữ thông tin cá nhân của bạn trong thời gian cần thiết để hoàn thành các mục đích đã nêu trong chính sách này, trừ khi pháp luật yêu cầu hoặc cho phép lưu trữ lâu hơn.</p>
+
+          <h3>📋 Thời gian lưu trữ cụ thể</h3>
+          <ul>
+            <li><strong>Thông tin tài khoản:</strong> Được lưu đến khi bạn yêu cầu xóa hoặc tài khoản không hoạt động liên tục trong 36 tháng</li>
+            <li><strong>Dữ liệu đơn hàng đã hoàn thành:</strong> Lưu tối đa 5 năm cho mục đích kế toán, thuế và giải quyết tranh chấp pháp lý</li>
+            <li><strong>Dữ liệu đơn hàng bị hủy:</strong> Xóa sau 90 ngày kể từ ngày hủy</li>
+            <li><strong>Dữ liệu tiếp thị & email marketing:</strong> Lưu đến khi bạn hủy đăng ký hoặc yêu cầu xóa</li>
+            <li><strong>Nhật ký truy cập (Log):</strong> Lưu tối đa 12 tháng phục vụ bảo mật hệ thống</li>
+          </ul>
+
+          <div class="privacy-alert" style="margin-top:16px;margin-bottom:0;">
+            <div class="privacy-alert-icon">⏰</div>
+            <div class="privacy-alert-body">
+              <h4>Xóa dữ liệu theo yêu cầu</h4>
+              <p>Khi bạn yêu cầu xóa tài khoản hoặc dữ liệu, chúng tôi sẽ thực hiện trong vòng <strong>30 ngày làm việc</strong>. Một số dữ liệu có thể được giữ lại khi pháp luật yêu cầu (ví dụ: hóa đơn, chứng từ tài chính) và sẽ được thông báo rõ ràng cho bạn.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ---- Section 5: Chia sẻ thông tin ---- -->
+        <section class="privacy-section" id="sec5">
+          <div class="privacy-section-header">
+            <div class="privacy-section-num">5</div>
+            <div class="privacy-section-title-group">
+              <h2>Chia Sẻ Thông Tin Với Bên Thứ Ba</h2>
+              <span class="section-sub">Third-party Data Sharing</span>
+            </div>
+          </div>
+
+          <div class="privacy-alert" style="margin-bottom:20px;">
+            <div class="privacy-alert-icon">🚫</div>
+            <div class="privacy-alert-body">
+              <h4>Cam kết không bán dữ liệu</h4>
+              <p>BookStore <strong>tuyệt đối không bán, cho thuê, trao đổi hay tiết lộ</strong> thông tin cá nhân của bạn cho bất kỳ tổ chức hoặc cá nhân nào vì mục đích thương mại. Đây là cam kết không thể thay đổi.</p>
+            </div>
+          </div>
+
+          <h3>✅ Trường hợp chia sẻ được phép</h3>
+          <p>Chúng tôi chỉ cung cấp thông tin cần thiết cho các đối tác trực tiếp phục vụ đơn hàng của bạn, bao gồm:</p>
+          <ul>
+            <li><strong>Đối tác vận chuyển:</strong> Giao Hàng Nhanh (GHN), GHTK, ViettelPost – chỉ cung cấp tên, số điện thoại và địa chỉ giao hàng để thực hiện giao hàng</li>
+            <li><strong>Cổng thanh toán:</strong> VNPay, MoMo, Payoo – xử lý giao dịch tài chính theo tiêu chuẩn PCI DSS</li>
+            <li><strong>Nhà cung cấp dịch vụ email:</strong> Chỉ để gửi email xác nhận đơn hàng và thông báo quan trọng</li>
+          </ul>
+
+          <h3>⚖️ Chia sẻ theo yêu cầu pháp lý</h3>
+          <p>Trong một số trường hợp bắt buộc, BookStore có thể cung cấp thông tin cho cơ quan có thẩm quyền khi có yêu cầu hợp pháp, bao gồm:</p>
+          <ul>
+            <li>Lệnh của Tòa án, Viện Kiểm sát hoặc cơ quan điều tra hình sự</li>
+            <li>Yêu cầu từ cơ quan thuế, tài chính hoặc quản lý thị trường theo quy định pháp luật</li>
+            <li>Phòng chống gian lận, lừa đảo hoặc hành vi vi phạm pháp luật</li>
+          </ul>
+
+          <div class="note-box">
+            <strong>🔗 Tất cả đối tác</strong> phải ký cam kết bảo mật dữ liệu với BookStore, chỉ được sử dụng thông tin cho mục đích đã thỏa thuận và phải có biện pháp bảo vệ dữ liệu tương đương hoặc cao hơn tiêu chuẩn của chúng tôi.
+          </div>
+        </section>
+
+        <!-- ---- Section 6: Quyền của khách hàng ---- -->
+        <section class="privacy-section" id="sec6">
+          <div class="privacy-section-header">
+            <div class="privacy-section-num">6</div>
+            <div class="privacy-section-title-group">
+              <h2>Quyền Của Khách Hàng</h2>
+              <span class="section-sub">Customer Rights &amp; Data Subject Rights</span>
+            </div>
+          </div>
+
+          <p>Theo quy định pháp luật Việt Nam và cam kết của BookStore, bạn có đầy đủ các quyền sau đây đối với dữ liệu cá nhân của mình:</p>
+
+          <div class="rights-pills">
+            <span class="rights-pill">👁 Quyền truy cập</span>
+            <span class="rights-pill">✏️ Quyền chỉnh sửa</span>
+            <span class="rights-pill">🗑 Quyền xóa dữ liệu</span>
+            <span class="rights-pill">📦 Quyền di chuyển dữ liệu</span>
+            <span class="rights-pill">🚫 Quyền phản đối</span>
+            <span class="rights-pill">⏸ Quyền hạn chế xử lý</span>
+          </div>
+
+          <h3>Mô tả chi tiết từng quyền</h3>
+          <ul>
+            <li><strong>Quyền truy cập:</strong> Yêu cầu BookStore cung cấp bản sao thông tin cá nhân chúng tôi đang lưu trữ về bạn trong vòng 15 ngày làm việc</li>
+            <li><strong>Quyền chỉnh sửa:</strong> Yêu cầu cập nhật, chỉnh sửa thông tin không chính xác hoặc không đầy đủ thông qua phần "Quản lý tài khoản" hoặc liên hệ trực tiếp</li>
+            <li><strong>Quyền xóa (Quyền được lãng quên):</strong> Yêu cầu xóa hoàn toàn dữ liệu cá nhân của bạn, trừ trường hợp pháp luật yêu cầu lưu trữ</li>
+            <li><strong>Quyền di chuyển dữ liệu:</strong> Nhận dữ liệu cá nhân của bạn ở định dạng có thể đọc được (JSON/CSV) để chuyển sang dịch vụ khác</li>
+            <li><strong>Quyền phản đối:</strong> Phản đối việc xử lý dữ liệu cho mục đích tiếp thị trực tiếp hoặc xử lý dựa trên lợi ích hợp pháp</li>
+            <li><strong>Quyền hạn chế xử lý:</strong> Yêu cầu tạm dừng việc xử lý dữ liệu của bạn trong thời gian xem xét yêu cầu khiếu nại</li>
+          </ul>
+
+          <h3>Cách thực hiện quyền của bạn</h3>
+          <p>Để thực hiện bất kỳ quyền nào ở trên, bạn có thể: (1) Đăng nhập vào tài khoản BookStore và truy cập phần <strong>Cài đặt &gt; Quyền riêng tư</strong>, (2) Gửi email đến <a href="mailto:privacy@bookstore.vn" style="color:var(--red);font-weight:600">privacy@bookstore.vn</a>, hoặc (3) Gọi hotline <a href="tel:18006236" style="color:var(--red);font-weight:600">1800 6236</a> trong giờ làm việc.</p>
+
+          <div class="note-box">
+            <strong>⚡ Thời gian phản hồi:</strong> Chúng tôi cam kết phản hồi mọi yêu cầu liên quan đến quyền dữ liệu trong vòng <strong>15 ngày làm việc</strong>. Trong trường hợp phức tạp, thời hạn có thể kéo dài thêm 30 ngày và bạn sẽ được thông báo trước.
+          </div>
+        </section>
+
+        <!-- ---- Section 7: Liên hệ ---- -->
+        <section class="privacy-section" id="sec7">
+          <div class="privacy-section-header">
+            <div class="privacy-section-num">7</div>
+            <div class="privacy-section-title-group">
+              <h2>Liên Hệ & Hỗ Trợ Bảo Mật</h2>
+              <span class="section-sub">Privacy Support &amp; Contact Information</span>
+            </div>
+          </div>
+
+          <p>Nếu bạn có bất kỳ thắc mắc, yêu cầu hoặc khiếu nại nào liên quan đến chính sách bảo mật và cách chúng tôi xử lý dữ liệu của bạn, vui lòng liên hệ theo các kênh dưới đây:</p>
+
+          <div class="contact-grid">
+            <div class="contact-info-item">
+              <div class="ci-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+              </div>
+              <div>
+                <h4>Email bảo mật</h4>
+                <a href="mailto:privacy@bookstore.vn">privacy@bookstore.vn</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+              </div>
+              <div>
+                <h4>Hotline hỗ trợ</h4>
+                <a href="tel:18006236">1800 6236</a>
+                <p style="font-size:0.78rem;color:var(--gray-400);font-weight:400;margin-top:2px">Thứ 2 – CN, 8:00 – 22:00</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+              </div>
+              <div>
+                <h4>Địa chỉ văn phòng</h4>
+                <p>123 Nguyễn Huệ, Q.1, TP.HCM</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>
+              </div>
+              <div>
+                <h4>Trung tâm trợ giúp</h4>
+                <a href="contact.html">Gửi yêu cầu trực tuyến</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="note-box" style="margin-top:20px;">
+            <strong>🏛️ Cơ quan giám sát:</strong> Nếu bạn cho rằng quyền dữ liệu của mình bị vi phạm và BookStore không giải quyết thỏa đáng, bạn có quyền khiếu nại lên Cục An toàn thông tin – Bộ Thông tin và Truyền thông hoặc cơ quan bảo vệ người tiêu dùng có thẩm quyền.
+          </div>
+        </section>
+
+        <!-- Footer actions -->
+        <div class="privacy-footer-actions">
+          <div class="privacy-footer-links">
+            <a href="#">
+              Điều khoản sử dụng
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+            </a>
+            <a href="#">
+              Chính sách đổi trả
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+            </a>
+            <a href="contact.html">
+              Liên hệ với chúng tôi
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+            </a>
+          </div>
+          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>
+            Lên đầu trang
+          </button>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:16px"><div class="logo-icon">B</div><div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div></a>
+        <p>BookStore – Nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách chính hãng, giao hàng toàn quốc.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">Z</a>
+          <a href="#" class="social-btn">▶</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="return-policy.html">Chính sách đổi trả</a>
+        <a href="privacy-policy.html">Chính sách bảo mật</a>
+        <a href="shopping-guide.html">Hướng dẫn mua hàng</a>
+        <a href="payment-guide.html">Hướng dẫn thanh toán</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Về chúng tôi</h4>
+        <a href="about.html">Giới thiệu</a>
+        <a href="blog.html">Blog sách</a>
+      </div>
+      <div class="footer-col">
+        <h4>Đăng ký nhận ưu đãi</h4>
+        <p style="font-size:.85rem;margin-bottom:10px">Nhận thông tin sách mới & khuyến mãi mỗi tuần.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email của bạn..." />
+          <button>Đăng ký</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💳 Visa/MC</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">📱 MoMo</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💵 COD</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">🏦 ATM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 BookStore. Giấy phép kinh doanh số 0123456789 – Sở KH&amp;ĐT TP.HCM.</div>
+</footer>
+
+<!-- BOTTOM NAV (MOBILE) -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bottom-nav-item active">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6-.093.1V14.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V10h2v4.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V7.246l-.093-.1-6-6z"/></svg>
+      <span>Trang chủ</span>
+    </a>
+    <a href="category.html" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg>
+      <span>Danh mục</span>
+    </a>
+    <a href="flash-sale.html" class="bottom-nav-item" style="color:var(--red)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg>
+      <span>Flash Sale</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" style="position:relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+      <span class="bnav-badge" style="display:none">0</span>
+      <span>Giỏ hàng</span>
+    </a>
+    <a href="login-register.html" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+      <span>Tài khoản</span>
+    </a>
+  </div>
+</nav>
+
+<script src="books-data.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookStore – Nhà sách trực tuyến hàng đầu Việt Nam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-hotline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        Hotline: <a href="tel:18006236">1800 6236</a>
+      </span>
+      <a href="index.html">Cửa hàng</a>
+      <a href="about.html">Giới thiệu</a>
+    </div>
+    <div class="topbar-right">
+      <a href="return-policy.html">Chính sách đổi trả</a>
+      <a href="order-lookup.html">Tra cứu đơn hàng</a>
+      <a href="login-register.html">Đăng nhập</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-inner">
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div>
+    </a>
+    <div class="header-search">
+      <input type="text" placeholder="Tìm kiếm sách, tác giả, nhà xuất bản..." autocomplete="off"/>
+      <button class="search-btn" aria-label="Tìm kiếm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>
+      </button>
+    </div>
+    <div class="header-icons">
+      <a href="login-register.html" class="header-icon-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+        <span>Tài khoản</span>
+      </a>
+      <a href="cart.html" class="header-icon-btn" style="position:relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        <span class="cart-badge" style="display:none">0</span>
+        <span>Giỏ hàng</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-item">
+      <a href="index.html" class="nav-link">🏠 Trang chủ</a>
+    </div>
+    <div class="nav-item">
+      <a href="category.html" class="nav-link">
+        📚 Sách
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+      </a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h4>Văn học</h4>
+          <a href="category.html">Tiểu thuyết</a>
+          <a href="category.html">Truyện ngắn</a>
+          <a href="category.html">Thơ ca</a>
+          <a href="category.html">Văn học dịch</a>
+          <a href="category.html">Văn học Việt Nam</a>
+        </div>
+        <div class="mega-col">
+          <h4>Kinh tế - Kinh doanh</h4>
+          <a href="category.html">Quản trị kinh doanh</a>
+          <a href="category.html">Marketing</a>
+          <a href="category.html">Tài chính - Kế toán</a>
+          <a href="category.html">Khởi nghiệp</a>
+          <a href="category.html">Phát triển bản thân</a>
+        </div>
+        <div class="mega-col">
+          <h4>Thiếu nhi</h4>
+          <a href="category.html">Truyện tranh</a>
+          <a href="category.html">Truyện cổ tích</a>
+          <a href="category.html">Sách tô màu</a>
+          <a href="category.html">Học tiếng Anh</a>
+        </div>
+        <div class="mega-col">
+          <h4>Khoa học</h4>
+          <a href="category.html">Công nghệ thông tin</a>
+          <a href="category.html">Y học</a>
+          <a href="category.html">Tâm lý học</a>
+          <a href="category.html">Lịch sử</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="flash-sale.html" class="nav-link" style="color:var(--red);font-weight:700">⚡ Flash Sale</a>
+    </div>
+    <div class="nav-item"><a href="blog.html" class="nav-link">✍️ Blog sách</a></div>
+    <div class="nav-item"><a href="about.html" class="nav-link">ℹ️ Giới thiệu</a></div>
+    <div class="nav-item"><a href="contact.html" class="nav-link">📞 Liên hệ</a></div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <h3>📚 BookStore Menu</h3>
+    <button class="mobile-close">✕</button>
+  </div>
+  <div class="mobile-menu-items">
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="category.html">📚 Tất cả sách</a>
+    <a href="flash-sale.html">⚡ Flash Sale</a>
+    <a href="cart.html">🛒 Giỏ hàng</a>
+    <a href="blog.html">✍️ Blog sách</a>
+    <a href="about.html">ℹ️ Giới thiệu</a>
+    <a href="contact.html">📞 Liên hệ</a>
+    <a href="login-register.html">👤 Đăng nhập</a>
+  </div>
+</div>
+
+<!-- ====================================================
+     BANNER SLIDER
+     ==================================================== -->
+<div class="container" style="padding-top:20px;padding-bottom:0">
+  <div class="banner-slider" id="mainBanner">
+    <div class="slides-track">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img class="slide-bg" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1280&q=80" alt="Banner 1">
+        <div class="slide-content">
+          <span class="slide-tag">⚡ Ưu đãi hôm nay</span>
+          <h2 class="slide-title">Sách Hay<br>Giá Tốt Mỗi Ngày</h2>
+          <p class="slide-desc">Hàng triệu đầu sách chính hãng, giao hàng nhanh toàn quốc. Giảm đến 50% dịp khai trương.</p>
+          <a href="flash-sale.html" class="slide-btn">Mua ngay →</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img class="slide-bg" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1280&q=80" alt="Banner 2">
+        <div class="slide-content">
+          <span class="slide-tag">📚 Bestseller</span>
+          <h2 class="slide-title">Những Cuốn Sách<br>Thay Đổi Cuộc Đời</h2>
+          <p class="slide-desc">Top 100 bestseller quốc tế và Việt Nam. Giao hàng trong ngày tại TP.HCM và Hà Nội.</p>
+          <a href="category.html" class="slide-btn">Khám phá →</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img class="slide-bg" src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=1280&q=80" alt="Banner 3">
+        <div class="slide-content">
+          <span class="slide-tag">🎁 Combo tiết kiệm</span>
+          <h2 class="slide-title">Combo Sách<br>Giảm 30% Hôm Nay</h2>
+          <p class="slide-desc">Mua combo 2 cuốn trở lên, tiết kiệm thêm 30%. Số lượng có hạn, đặt ngay!</p>
+          <a href="#combos" class="slide-btn">Xem combo →</a>
+        </div>
+      </div>
+    </div>
+    <button class="slider-btn prev" aria-label="Prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
+    </button>
+    <button class="slider-btn next" aria-label="Next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+    </button>
+    <div class="slider-dots">
+      <div class="slider-dot active"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES QUICK LINKS -->
+<section class="section" style="padding-top:24px;padding-bottom:0">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:12px">
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">📖</div>Văn học
+      </a>
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">💼</div>Kinh doanh
+      </a>
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">🧒</div>Thiếu nhi
+      </a>
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">🔬</div>Khoa học
+      </a>
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">🧠</div>Tâm lý
+      </a>
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">🗺️</div>Lịch sử
+      </a>
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">🌍</div>Ngoại ngữ
+      </a>
+      <a href="category.html" style="text-align:center;padding:14px 8px;background:#fff;border:1px solid var(--gray-200);border-radius:10px;transition:all .25s;font-size:.8rem;color:var(--gray-700);font-weight:500" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--gray-200)';this.style.color='var(--gray-700)'">
+        <div style="font-size:1.6rem;margin-bottom:6px">🎭</div>Kỹ năng sống
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     FLASH SALE SECTION
+     ==================================================== -->
+<section class="flash-sale-section" style="margin-top:30px">
+  <div class="container">
+    <div class="flash-sale-header">
+      <div class="flash-sale-title">
+        <span class="flash-icon">⚡</span>
+        <div>
+          <h2>Flash Sale</h2>
+          <p>Kết thúc sau:</p>
+        </div>
+      </div>
+      <div class="countdown">
+        <div class="countdown-unit">
+          <span class="countdown-num" id="fs_h">06</span>
+          <span class="countdown-label">Giờ</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="fs_m">00</span>
+          <span class="countdown-label">Phút</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="fs_s">00</span>
+          <span class="countdown-label">Giây</span>
+        </div>
+      </div>
+      <a href="flash-sale.html" class="view-all" style="color:rgba(255,255,255,0.9);position:relative;z-index:10;cursor:pointer" onclick="window.location.href='flash-sale.html';return false;">Xem tất cả →</a>
+    </div>
+    <div class="flash-products-track" id="flashGrid"></div>
+  </div>
+</section>
+
+<!-- ====================================================
+     COMBO SECTION
+     ==================================================== -->
+<section class="section" id="combos">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Combo Bestseller</h2>
+    </div>
+    <div class="combo-grid" id="comboGrid"></div>
+  </div>
+</section>
+
+<!-- ====================================================
+     TABBED PRODUCT SLIDERS
+     ==================================================== -->
+<section class="section" style="background:var(--gray-50);padding:40px 0">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Sách nổi bật</h2>
+    </div>
+
+    <div class="tab-group">
+      <div class="tab-buttons" style="margin-bottom:20px">
+        <button class="tab-btn active" data-tab="new">✨ Sách mới</button>
+        <button class="tab-btn" data-tab="best">🔥 Bán chạy</button>
+      </div>
+
+      <div data-tab-panel="new" class="tab-panel active">
+        <div class="product-slider-wrap" id="sliderNew">
+          <div class="product-slider">
+            <div class="product-slider-track" id="sliderNewTrack"></div>
+          </div>
+          <button class="pslider-btn prev" aria-label="Prev">‹</button>
+          <button class="pslider-btn next" aria-label="Next">›</button>
+        </div>
+      </div>
+
+      <div data-tab-panel="best" class="tab-panel">
+        <div class="product-slider-wrap" id="sliderBest">
+          <div class="product-slider">
+            <div class="product-slider-track" id="sliderBestTrack"></div>
+          </div>
+          <button class="pslider-btn prev" aria-label="Prev">‹</button>
+          <button class="pslider-btn next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNERS ROW -->
+<section class="section" style="padding-top:16px;padding-bottom:40px">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
+      <a href="#" style="border-radius:10px;overflow:hidden;display:block;position:relative;aspect-ratio:2.5/1">
+        <img src="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?w=600&q=80" alt="Promo 1" style="width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(192,57,43,.75),transparent);display:flex;align-items:center;padding:20px">
+          <span style="color:#fff;font-weight:700;font-size:1rem;font-family:var(--font-display)">Văn học<br>nước ngoài</span>
+        </div>
+      </a>
+      <a href="#" style="border-radius:10px;overflow:hidden;display:block;position:relative;aspect-ratio:2.5/1">
+        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80" alt="Promo 2" style="width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,60,120,.75),transparent);display:flex;align-items:center;padding:20px">
+          <span style="color:#fff;font-weight:700;font-size:1rem;font-family:var(--font-display)">Kinh doanh<br>& Khởi nghiệp</span>
+        </div>
+      </a>
+      <a href="#" style="border-radius:10px;overflow:hidden;display:block;position:relative;aspect-ratio:2.5/1">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Promo 3" style="width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(39,120,50,.75),transparent);display:flex;align-items:center;padding:20px">
+          <span style="color:#fff;font-weight:700;font-size:1rem;font-family:var(--font-display)">Sách<br>Thiếu nhi</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- USP STRIP -->
+<section style="background:var(--red);padding:28px 0">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center">
+      <div style="color:#fff">
+        <div style="font-size:1.8rem;margin-bottom:8px">🚚</div>
+        <div style="font-weight:700;font-size:.95rem">Giao hàng toàn quốc</div>
+        <div style="font-size:.8rem;opacity:.85;margin-top:4px">Miễn phí từ 150.000đ</div>
+      </div>
+      <div style="color:#fff">
+        <div style="font-size:1.8rem;margin-bottom:8px">✅</div>
+        <div style="font-weight:700;font-size:.95rem">Sách chính hãng 100%</div>
+        <div style="font-size:.8rem;opacity:.85;margin-top:4px">Đảm bảo hoàn tiền</div>
+      </div>
+      <div style="color:#fff">
+        <div style="font-size:1.8rem;margin-bottom:8px">🔄</div>
+        <div style="font-weight:700;font-size:.95rem">Đổi trả 30 ngày</div>
+        <div style="font-size:.8rem;opacity:.85;margin-top:4px">Không cần lý do</div>
+      </div>
+      <div style="color:#fff">
+        <div style="font-size:1.8rem;margin-bottom:8px">💬</div>
+        <div style="font-weight:700;font-size:.95rem">Hỗ trợ 24/7</div>
+        <div style="font-size:.8rem;opacity:.85;margin-top:4px">Chat, gọi điện, email</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:16px"><div class="logo-icon">B</div><div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div></a>
+        <p>BookStore – Nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách chính hãng, giao hàng toàn quốc.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">Z</a>
+          <a href="#" class="social-btn">▶</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="return-policy.html">Chính sách đổi trả</a>
+        <a href="privacy-policy.html">Chính sách bảo mật</a>
+        <a href="shopping-guide.html">Hướng dẫn mua hàng</a>
+        <a href="payment-guide.html">Hướng dẫn thanh toán</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Về chúng tôi</h4>
+        <a href="about.html">Giới thiệu</a>
+        <a href="blog.html">Blog sách</a>
+      </div>
+      <div class="footer-col">
+        <h4>Đăng ký nhận ưu đãi</h4>
+        <p style="font-size:.85rem;margin-bottom:10px">Nhận thông tin sách mới & khuyến mãi mỗi tuần.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email của bạn..." />
+          <button>Đăng ký</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💳 Visa/MC</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">📱 MoMo</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💵 COD</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">🏦 ATM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 BookStore. Giấy phép kinh doanh số 0123456789 – Sở KH&amp;ĐT TP.HCM.</div>
+</footer>
+
+<!-- BOTTOM NAV (MOBILE) -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bottom-nav-item active">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6-.093.1V14.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V10h2v4.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V7.246l-.093-.1-6-6z"/></svg>
+      <span>Trang chủ</span>
+    </a>
+    <a href="category.html" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg>
+      <span>Danh mục</span>
+    </a>
+    <a href="flash-sale.html" class="bottom-nav-item" style="color:var(--red)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg>
+      <span>Flash Sale</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" style="position:relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+      <span class="bnav-badge" style="display:none">0</span>
+      <span>Giỏ hàng</span>
+    </a>
+    <a href="login-register.html" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+      <span>Tài khoản</span>
+    </a>
+  </div>
+</nav>
+
+<script src="books-data.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tìm hiểu về BookStore – nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách chính hãng." />
+  <title>Giới thiệu – BookStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-hotline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        Hotline: <a href="tel:18006236">1800 6236</a>
+      </span>
+      <a href="index.html">Cửa hàng</a>
+      <a href="about.html">Giới thiệu</a>
+    </div>
+    <div class="topbar-right">
+      <a href="return-policy.html">Chính sách đổi trả</a>
+      <a href="order-lookup.html">Tra cứu đơn hàng</a>
+      <a href="login-register.html">Đăng nhập</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-inner">
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div>
+    </a>
+    <div class="header-search">
+      <input type="text" placeholder="Tìm kiếm sách, tác giả, nhà xuất bản..." autocomplete="off"/>
+      <button class="search-btn" aria-label="Tìm kiếm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>
+      </button>
+    </div>
+    <div class="header-icons">
+      <a href="login-register.html" class="header-icon-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+        <span>Tài khoản</span>
+      </a>
+      <a href="cart.html" class="header-icon-btn" style="position:relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        <span class="cart-badge" style="display:none">0</span>
+        <span>Giỏ hàng</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-item">
+      <a href="index.html" class="nav-link">🏠 Trang chủ</a>
+    </div>
+    <div class="nav-item">
+      <a href="category.html" class="nav-link">
+        📚 Sách
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+      </a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h4>Văn học</h4>
+          <a href="category.html">Tiểu thuyết</a>
+          <a href="category.html">Truyện ngắn</a>
+          <a href="category.html">Thơ ca</a>
+          <a href="category.html">Văn học dịch</a>
+          <a href="category.html">Văn học Việt Nam</a>
+        </div>
+        <div class="mega-col">
+          <h4>Kinh tế - Kinh doanh</h4>
+          <a href="category.html">Quản trị kinh doanh</a>
+          <a href="category.html">Marketing</a>
+          <a href="category.html">Tài chính - Kế toán</a>
+          <a href="category.html">Khởi nghiệp</a>
+          <a href="category.html">Phát triển bản thân</a>
+        </div>
+        <div class="mega-col">
+          <h4>Thiếu nhi</h4>
+          <a href="category.html">Truyện tranh</a>
+          <a href="category.html">Truyện cổ tích</a>
+          <a href="category.html">Sách tô màu</a>
+          <a href="category.html">Học tiếng Anh</a>
+        </div>
+        <div class="mega-col">
+          <h4>Khoa học</h4>
+          <a href="category.html">Công nghệ thông tin</a>
+          <a href="category.html">Y học</a>
+          <a href="category.html">Tâm lý học</a>
+          <a href="category.html">Lịch sử</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="flash-sale.html" class="nav-link" style="color:var(--red);font-weight:700">⚡ Flash Sale</a>
+    </div>
+    <div class="nav-item"><a href="blog.html" class="nav-link">✍️ Blog sách</a></div>
+    <div class="nav-item"><a href="about.html" class="nav-link active">ℹ️ Giới thiệu</a></div>
+    <div class="nav-item"><a href="contact.html" class="nav-link">📞 Liên hệ</a></div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <h3>📚 BookStore Menu</h3>
+    <button class="mobile-close">✕</button>
+  </div>
+  <div class="mobile-menu-items">
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="category.html">📚 Tất cả sách</a>
+    <a href="flash-sale.html">⚡ Flash Sale</a>
+    <a href="cart.html">🛒 Giỏ hàng</a>
+    <a href="blog.html">✍️ Blog sách</a>
+    <a href="about.html">ℹ️ Giới thiệu</a>
+    <a href="contact.html">📞 Liên hệ</a>
+    <a href="login-register.html">👤 Đăng nhập</a>
+  </div>
+</div>
+
+<!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+
+<!-- HERO -->
+<div class="about-hero">
+  <div class="container">
+    <div class="breadcrumb" style="justify-content:center;margin-bottom:20px">
+      <a href="index.html" style="color:rgba(255,255,255,.7)">Trang chủ</a>
+      <span class="breadcrumb-sep" style="color:rgba(255,255,255,.4)">›</span>
+      <span style="color:#fff">Giới thiệu</span>
+    </div>
+    <h1>Về BookStore</h1>
+    <p>Chúng tôi tin rằng một cuốn sách hay có thể thay đổi một cuộc đời. Đó là lý do chúng tôi tồn tại.</p>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="container">
+  <div class="about-stats">
+    <div class="stat-card">
+      <div class="stat-num" id="statBooks">0</div>
+      <div class="stat-label">📚 Đầu sách</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statCustomers">0</div>
+      <div class="stat-label">👥 Khách hàng tin tưởng</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statOrders">0</div>
+      <div class="stat-label">📦 Đơn hàng đã xử lý</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statStores">0</div>
+      <div class="stat-label">🏪 Cửa hàng toàn quốc</div>
+    </div>
+  </div>
+
+  <!-- OUR STORY -->
+  <!-- FIX: removed inline style="display:inline-flex;margin-top:8px;padding:12px 24px"
+       from the CTA button — .btn-primary already provides these styles. -->
+  <div class="about-story">
+    <div>
+      <h2>Câu chuyện của chúng tôi</h2>
+      <p>BookStore được thành lập năm 2010 từ một cửa hàng sách nhỏ tại TP. Hồ Chí Minh với chỉ 500 đầu sách. Người sáng lập, anh Nguyễn Minh Tuấn, tin rằng sách là cầu nối giữa con người với tri thức, văn hóa và những ý tưởng vĩ đại.</p>
+      <p>Qua hơn 15 năm xây dựng, BookStore đã phát triển thành nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách, phục vụ hơn 2 triệu độc giả trên toàn quốc mỗi năm.</p>
+      <p>Chúng tôi không chỉ bán sách – chúng tôi xây dựng cộng đồng đọc sách, truyền cảm hứng và kết nối những tâm hồn yêu văn học.</p>
+      <a href="contact.html" class="btn-primary">Liên hệ với chúng tôi →</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=700&q=80" alt="BookStore Story">
+  </div>
+</div>
+
+<!-- MISSION & VISION
+     FIX: was using inline style="display:grid;grid-template-columns:1fr 1fr" with zero
+     responsive handling. Replaced with dedicated CSS class .mission-vision-grid that
+     collapses to a single column below 900 px. -->
+<div class="mission-vision-section">
+  <div class="container">
+    <div class="mission-vision-grid">
+      <div>
+        <div class="mv-icon">🎯</div>
+        <h2>Sứ mệnh</h2>
+        <p>Kết nối mọi người Việt Nam với tri thức, văn hóa và những ý tưởng thay đổi cuộc đời thông qua sách chất lượng cao với giá cả hợp lý, dịch vụ xuất sắc và trải nghiệm mua sắm thuận tiện.</p>
+      </div>
+      <div>
+        <div class="mv-icon">🌟</div>
+        <h2>Tầm nhìn</h2>
+        <p>Trở thành hệ sinh thái sách hàng đầu Đông Nam Á vào năm 2030 – nơi mỗi người đều có thể tiếp cận kiến thức không giới hạn, từ sách giấy truyền thống đến ebook và audiobook.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CORE VALUES
+     FIX: replaced raw inline style heading with .about-section-header helper class. -->
+<div class="container">
+  <div class="about-section-header">
+    <h2>Giá trị cốt lõi</h2>
+    <p>Những nguyên tắc định hướng mọi quyết định của chúng tôi</p>
+  </div>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">📖</div>
+      <h3>Chính hãng 100%</h3>
+      <p>Cam kết chỉ cung cấp sách chính hãng từ các nhà xuất bản uy tín. Không bán sách lậu, sách giả dưới mọi hình thức.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">⭐</div>
+      <h3>Chất lượng dịch vụ</h3>
+      <p>Đặt trải nghiệm khách hàng lên hàng đầu. Đổi trả dễ dàng, hỗ trợ 24/7, giao hàng nhanh chóng.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🌱</div>
+      <h3>Phát triển bền vững</h3>
+      <p>Cam kết bảo vệ môi trường với bao bì tái chế, giảm thiểu rác thải và ủng hộ các chương trình trồng rừng.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🤝</div>
+      <h3>Cộng đồng</h3>
+      <p>Xây dựng cộng đồng đọc sách lành mạnh, tổ chức các sự kiện văn học và hỗ trợ tác giả Việt Nam.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">💡</div>
+      <h3>Đổi mới sáng tạo</h3>
+      <p>Liên tục cải tiến công nghệ và dịch vụ để mang lại trải nghiệm mua sắm tốt nhất cho độc giả.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🎓</div>
+      <h3>Lan tỏa tri thức</h3>
+      <p>Mỗi cuốn sách là một hạt giống tri thức. Chúng tôi tự hào là cầu nối giữa độc giả và tác giả.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TEAM
+     FIX (CRITICAL): Was using JS template literal syntax (${[...].map(...).join('')})
+     directly inside static HTML — this renders as raw text in the browser,
+     making the entire team section invisible/broken.
+     Replaced with real static HTML using .team-grid / .team-card CSS classes.
+     Also fixed: grid had no responsive breakpoints (was inline style="repeat(4,1fr)").
+     Now collapses to 2 columns on tablet and stays 2 columns on mobile. -->
+<div class="team-section">
+  <div class="container">
+    <div class="about-section-header">
+      <h2>Đội ngũ lãnh đạo</h2>
+      <p>Những con người đam mê sách và kiến tạo BookStore</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="Nguyễn Minh Tuấn">
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Nguyễn Minh Tuấn</div>
+          <div class="team-card-role">CEO & Sáng lập viên</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80" alt="Trần Thị Lan Anh">
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Trần Thị Lan Anh</div>
+          <div class="team-card-role">Giám đốc Vận hành</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80" alt="Lê Hoàng Nam">
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Lê Hoàng Nam</div>
+          <div class="team-card-role">Giám đốc Công nghệ</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80" alt="Phạm Thu Hà">
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Phạm Thu Hà</div>
+          <div class="team-card-role">Giám đốc Marketing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AWARDS & CERTIFICATIONS
+     FIX (CRITICAL): Same JS template literal bug as Team section. All four award
+     cards were invisible. Replaced with real static HTML using .awards-grid /
+     .award-card CSS classes with proper responsive breakpoints. -->
+<div class="awards-section">
+  <div class="container">
+    <div class="about-section-header">
+      <h2>Giải thưởng &amp; Chứng nhận</h2>
+      <p>Sự ghi nhận từ các tổ chức uy tín trong và ngoài nước</p>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card">
+        <div class="award-icon">🏆</div>
+        <div class="award-title">Top 10 TMĐT Uy Tín</div>
+        <div class="award-sub">Bộ Công Thương 2024</div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">⭐</div>
+        <div class="award-title">Best E-commerce</div>
+        <div class="award-sub">Vietnam Digital Awards 2023</div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">🛡️</div>
+        <div class="award-title">Bảo mật ISO 27001</div>
+        <div class="award-sub">Chứng nhận quốc tế</div>
+      </div>
+      <div class="award-card">
+        <div class="award-icon">🌟</div>
+        <div class="award-title">Thương hiệu xuất sắc</div>
+        <div class="award-sub">Người tiêu dùng bình chọn 2024</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:16px"><div class="logo-icon">B</div><div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div></a>
+        <p>BookStore – Nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách chính hãng, giao hàng toàn quốc.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">Z</a>
+          <a href="#" class="social-btn">▶</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="return-policy.html">Chính sách đổi trả</a>
+        <a href="privacy-policy.html">Chính sách bảo mật</a>
+        <a href="shopping-guide.html">Hướng dẫn mua hàng</a>
+        <a href="payment-guide.html">Hướng dẫn thanh toán</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Về chúng tôi</h4>
+        <a href="about.html">Giới thiệu</a>
+        <a href="blog.html">Blog sách</a>
+      </div>
+      <div class="footer-col">
+        <h4>Đăng ký nhận ưu đãi</h4>
+        <p style="font-size:.85rem;margin-bottom:10px">Nhận thông tin sách mới &amp; khuyến mãi mỗi tuần.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email của bạn..." />
+          <button>Đăng ký</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💳 Visa/MC</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">📱 MoMo</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💵 COD</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">🏦 ATM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 BookStore. Giấy phép kinh doanh số 0123456789 – Sở KH&amp;ĐT TP.HCM.</div>
+</footer>
+
+<!-- BOTTOM NAVIGATION -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bottom-nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6-.093.1V14.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V10h2v4.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V7.246l-.093-.1-6-6z"/></svg><span>Trang chủ</span></a>
+    <a href="category.html" class="bottom-nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg><span>Danh mục</span></a>
+    <a href="flash-sale.html" class="bottom-nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg><span>Sale</span></a>
+    <a href="cart.html" class="bottom-nav-item" style="position:relative"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg><span class="bnav-badge" style="display:none">0</span><span>Giỏ hàng</span></a>
+    <a href="login-register.html" class="bottom-nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg><span>Tài khoản</span></a>
+  </div>
+</nav>
+
+<!-- SCRIPTS -->
+<script src="books-data.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

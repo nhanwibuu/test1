@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanh toán – BookStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-hotline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        Hotline: <a href="tel:18006236">1800 6236</a>
+      </span>
+      <a href="index.html">Cửa hàng</a>
+      <a href="about.html">Giới thiệu</a>
+    </div>
+    <div class="topbar-right">
+      <a href="return-policy.html">Chính sách đổi trả</a>
+      <a href="order-lookup.html">Tra cứu đơn hàng</a>
+      <a href="login-register.html">Đăng nhập</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-inner">
+    <button class="hamburger"><span></span><span></span><span></span></button>
+    <a href="index.html" class="logo"><div class="logo-icon">B</div><div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div></a>
+    <div class="header-search"><input type="text" placeholder="Tìm kiếm sách..." autocomplete="off"/><button class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg></button></div>
+    <div class="header-icons">
+      <a href="cart.html" class="header-icon-btn" style="position:relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        <span class="cart-badge" style="display:none">0</span><span>Giỏ hàng</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-item"><a href="index.html" class="nav-link">🏠 Trang chủ</a></div>
+    <div class="nav-item"><a href="category.html" class="nav-link">📚 Sách</a></div>
+    <div class="nav-item"><a href="flash-sale.html" class="nav-link" style="color:var(--red);font-weight:700">⚡ Flash Sale</a></div>
+    <div class="nav-item"><a href="blog.html" class="nav-link">✍️ Blog</a></div>
+    <div class="nav-item"><a href="about.html" class="nav-link">ℹ️ Giới thiệu</a></div>
+    <div class="nav-item"><a href="contact.html" class="nav-link">📞 Liên hệ</a></div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header"><h3>📚 Menu</h3><button class="mobile-close">✕</button></div>
+  <div class="mobile-menu-items">
+    <a href="index.html">🏠 Trang chủ</a><a href="category.html">📚 Danh mục</a>
+    <a href="cart.html">🛒 Giỏ hàng</a><a href="login-register.html">👤 Tài khoản</a>
+  </div>
+</div>
+
+<div class="page-header">
+  <div class="container">
+    <h1>💳 Thanh toán</h1>
+    <p>Điền thông tin giao hàng và chọn phương thức thanh toán</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">Trang chủ</a><span class="breadcrumb-sep">›</span>
+    <a href="cart.html">Giỏ hàng</a><span class="breadcrumb-sep">›</span>
+    <span>Thanh toán</span>
+  </div>
+
+  <!-- Steps -->
+  <div style="display:flex;justify-content:center;gap:0;margin-bottom:30px">
+    <div style="display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--gray-100);color:var(--gray-500);border-radius:6px 0 0 6px;font-size:.87rem">
+      <span style="width:22px;height:22px;background:#27ae60;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem">✓</span>
+      Giỏ hàng
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--red);color:#fff;font-size:.87rem;font-weight:600">
+      <span style="width:22px;height:22px;background:rgba(255,255,255,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem">2</span>
+      Thanh toán
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--gray-100);color:var(--gray-400);border-radius:0 6px 6px 0;font-size:.87rem">
+      <span style="width:22px;height:22px;background:var(--gray-300);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem">3</span>
+      Xác nhận
+    </div>
+  </div>
+
+  <div class="checkout-layout">
+    <!-- LEFT: FORM -->
+    <div>
+      <!-- Shipping Address -->
+      <div class="checkout-form-card">
+        <h3 class="checkout-section-title">
+          <span class="step-num">1</span>
+          Địa chỉ giao hàng
+        </h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Họ và tên *</label>
+            <input type="text" id="fullName" placeholder="Nguyễn Văn A" />
+          </div>
+          <div class="form-group">
+            <label>Số điện thoại *</label>
+            <input type="tel" id="phone" placeholder="0901 234 567" />
+          </div>
+          <div class="form-group full">
+            <label>Email *</label>
+            <input type="email" id="email" placeholder="email@example.com" />
+          </div>
+          <div class="form-group">
+            <label>Tỉnh / Thành phố *</label>
+            <select id="province">
+              <option value="">Chọn tỉnh/thành</option>
+              <option value="hcm" selected>TP. Hồ Chí Minh</option>
+              <option value="hn">Hà Nội</option>
+              <option value="dn">Đà Nẵng</option>
+              <option value="ct">Cần Thơ</option>
+              <option value="hp">Hải Phòng</option>
+              <option value="other">Tỉnh thành khác...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Quận / Huyện *</label>
+            <select id="district">
+              <option value="">Chọn quận/huyện</option>
+              <option>Quận 1</option>
+              <option>Quận 3</option>
+              <option>Quận 5</option>
+              <option>Quận 7</option>
+              <option>Bình Thạnh</option>
+              <option>Gò Vấp</option>
+              <option>Tân Bình</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Phường / Xã</label>
+            <select id="ward">
+              <option value="">Chọn phường/xã</option>
+              <option>Phường Bến Nghé</option>
+              <option>Phường Bến Thành</option>
+              <option>Phường Cầu Ông Lãnh</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>Địa chỉ cụ thể (số nhà, tên đường) *</label>
+            <input type="text" id="address" placeholder="VD: 123 Đường Lê Lợi" />
+          </div>
+          <div class="form-group full">
+            <label>Ghi chú đơn hàng</label>
+            <textarea id="note" rows="3" placeholder="VD: Giao buổi sáng, để tại bảo vệ..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shipping Method -->
+      <div class="checkout-form-card">
+        <h3 class="checkout-section-title">
+          <span class="step-num">2</span>
+          Phương thức vận chuyển
+        </h3>
+        <div class="radio-options" id="shippingOptions">
+          <label class="radio-option selected" onclick="selectOption(this, 'shipping')">
+            <input type="radio" name="shipping" value="standard" checked>
+            <div>
+              <div class="radio-option-label">🚚 Giao hàng tiêu chuẩn (3-5 ngày)</div>
+              <div class="radio-option-desc">Miễn phí cho đơn từ 150.000đ | 30.000đ cho đơn nhỏ hơn</div>
+            </div>
+            <span style="margin-left:auto;font-weight:700;color:var(--red)">Miễn phí</span>
+          </label>
+          <label class="radio-option" onclick="selectOption(this, 'shipping')">
+            <input type="radio" name="shipping" value="express">
+            <div>
+              <div class="radio-option-label">⚡ Giao hàng nhanh (1-2 ngày)</div>
+              <div class="radio-option-desc">Áp dụng cho TP.HCM, Hà Nội, Đà Nẵng</div>
+            </div>
+            <span style="margin-left:auto;font-weight:700;color:var(--red)">50.000đ</span>
+          </label>
+          <label class="radio-option" onclick="selectOption(this, 'shipping')">
+            <input type="radio" name="shipping" value="same_day">
+            <div>
+              <div class="radio-option-label">🏎️ Giao trong ngày (nội thành TP.HCM)</div>
+              <div class="radio-option-desc">Đặt trước 11:00, nhận trong ngày</div>
+            </div>
+            <span style="margin-left:auto;font-weight:700;color:var(--red)">80.000đ</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Payment Method -->
+      <div class="checkout-form-card">
+        <h3 class="checkout-section-title">
+          <span class="step-num">3</span>
+          Phương thức thanh toán
+        </h3>
+        <div class="radio-options" id="paymentOptions">
+          <label class="radio-option selected" onclick="selectOption(this, 'payment')">
+            <input type="radio" name="payment" value="cod" checked>
+            <div>
+              <div class="radio-option-label">💵 Thanh toán khi nhận hàng (COD)</div>
+              <div class="radio-option-desc">Trả tiền mặt khi nhận sách tại nhà</div>
+            </div>
+            <span style="font-size:1.4rem;margin-left:auto">💵</span>
+          </label>
+          <label class="radio-option" onclick="selectOption(this, 'payment')">
+            <input type="radio" name="payment" value="bank">
+            <div>
+              <div class="radio-option-label">🏦 Chuyển khoản ngân hàng</div>
+              <div class="radio-option-desc">Vietcombank, Techcombank, BIDV, VietinBank...</div>
+            </div>
+            <span style="font-size:1.4rem;margin-left:auto">🏦</span>
+          </label>
+          <label class="radio-option" onclick="selectOption(this, 'payment')">
+            <input type="radio" name="payment" value="momo">
+            <div>
+              <div class="radio-option-label">📱 Ví MoMo</div>
+              <div class="radio-option-desc">Thanh toán qua ứng dụng MoMo</div>
+            </div>
+            <span style="font-size:1.4rem;margin-left:auto">📱</span>
+          </label>
+          <label class="radio-option" onclick="selectOption(this, 'payment')">
+            <input type="radio" name="payment" value="card">
+            <div>
+              <div class="radio-option-label">💳 Thẻ tín dụng / ghi nợ</div>
+              <div class="radio-option-desc">Visa, MasterCard, JCB, ATM nội địa</div>
+            </div>
+            <span style="font-size:1.4rem;margin-left:auto">💳</span>
+          </label>
+        </div>
+
+        <!-- Bank info (shown when bank selected) -->
+        <div id="bankInfo" style="display:none;margin-top:16px;background:var(--gray-50);border-radius:8px;padding:16px">
+          <p style="font-size:.88rem;font-weight:700;margin-bottom:10px">Thông tin chuyển khoản:</p>
+          <div style="font-size:.85rem;line-height:2;color:var(--gray-700)">
+            <div>Ngân hàng: <b>Vietcombank</b></div>
+            <div>Số tài khoản: <b>1234567890</b></div>
+            <div>Chủ tài khoản: <b>CONG TY TNHH BOOKSTORE</b></div>
+            <div>Nội dung CK: <b>BOOKSTORE + Số điện thoại</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: ORDER SUMMARY -->
+    <div>
+      <div class="cart-summary" style="position:sticky;top:90px">
+        <h3>Đơn hàng của bạn</h3>
+        <div id="checkoutItems" style="max-height:280px;overflow-y:auto;margin-bottom:16px">
+          <!-- Rendered by JS -->
+        </div>
+        <div style="border-top:1px solid var(--gray-200);padding-top:14px">
+          <div class="summary-row"><span>Tạm tính</span><span id="checkoutSubtotal">0đ</span></div>
+          <div class="summary-row"><span>Vận chuyển</span><span id="checkoutShipping">Miễn phí</span></div>
+          <div class="summary-total">
+            <span>Tổng cộng</span>
+            <span id="checkoutTotal">0đ</span>
+          </div>
+        </div>
+        <button class="checkout-btn" onclick="placeOrder()" id="placeOrderBtn">
+          ✅ Đặt hàng ngay
+        </button>
+        <p style="text-align:center;font-size:.75rem;color:var(--gray-400);margin-top:10px">
+          🔒 Thông tin của bạn được bảo mật tuyệt đối
+        </p>
+        <a href="cart.html" style="display:block;text-align:center;font-size:.83rem;color:var(--red);margin-top:10px">← Quay lại giỏ hàng</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div id="successModal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:9999;align-items:center;justify-content:center;display:none">
+  <div style="background:#fff;border-radius:16px;padding:40px;max-width:460px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.2)">
+    <div style="font-size:4rem;margin-bottom:16px">🎉</div>
+    <h2 style="font-family:var(--font-display);font-size:1.6rem;margin-bottom:10px;color:var(--gray-900)">Đặt hàng thành công!</h2>
+    <p style="color:var(--gray-500);margin-bottom:8px">Mã đơn hàng: <b style="color:var(--red)" id="orderCode">#BS2025001</b></p>
+    <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:24px">Chúng tôi sẽ liên hệ xác nhận và giao hàng trong 3-5 ngày làm việc.</p>
+    <div style="display:flex;gap:12px;justify-content:center">
+      <a href="index.html" class="btn-secondary" style="padding:12px 24px">← Về trang chủ</a>
+      <a href="category.html" class="btn-primary" style="padding:12px 24px">Tiếp tục mua sắm</a>
+    </div>
+  </div>
+</div>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:16px"><div class="logo-icon">B</div><div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div></a>
+        <p>BookStore – Nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách chính hãng, giao hàng toàn quốc.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">Z</a>
+          <a href="#" class="social-btn">▶</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="return-policy.html">Chính sách đổi trả</a>
+        <a href="privacy-policy.html">Chính sách bảo mật</a>
+        <a href="shopping-guide.html">Hướng dẫn mua hàng</a>
+        <a href="payment-guide.html">Hướng dẫn thanh toán</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Về chúng tôi</h4>
+        <a href="about.html">Giới thiệu</a>
+        <a href="blog.html">Blog sách</a>
+      </div>
+      <div class="footer-col">
+        <h4>Đăng ký nhận ưu đãi</h4>
+        <p style="font-size:.85rem;margin-bottom:10px">Nhận thông tin sách mới & khuyến mãi mỗi tuần.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email của bạn..." />
+          <button>Đăng ký</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💳 Visa/MC</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">📱 MoMo</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💵 COD</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">🏦 ATM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 BookStore. Giấy phép kinh doanh số 0123456789 – Sở KH&amp;ĐT TP.HCM.</div>
+</footer>
+
+<!-- FOOTER -->
+
+<!-- BOTTOM NAVIGATION -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bottom-nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6-.093.1V14.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V10h2v4.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V7.246l-.093-.1-6-6z"/></svg><span>Trang chủ</span></a>
+    <a href="category.html" class="bottom-nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg><span>Danh mục</span></a>
+    <a href="cart.html" class="bottom-nav-item" style="position:relative"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg><span class="bnav-badge" style="display:none">0</span><span>Giỏ</span></a>
+    <a href="login-register.html" class="bottom-nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg><span>Tài khoản</span></a>
+  </div>
+</nav>
+
+<!-- SCRIPTS -->
+<script src="main.js"></script>
+<script src="components.js"></script>
+<script src="books-data.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chính Sách Đổi Trả – BookStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Topbar -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-hotline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        Hotline: <a href="tel:18006236">1800 6236</a>
+      </span>
+      <a href="index.html">Cửa hàng</a>
+      <a href="about.html">Giới thiệu</a>
+    </div>
+    <div class="topbar-right">
+      <a href="return-policy.html">Chính sách đổi trả</a>
+      <a href="order-lookup.html">Tra cứu đơn hàng</a>
+      <a href="login-register.html">Đăng nhập</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Header -->
+<header class="main-header">
+  <div class="header-inner">
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div>
+    </a>
+    <div class="header-search">
+      <input type="text" placeholder="Tìm kiếm sách, tác giả, nhà xuất bản..." autocomplete="off"/>
+      <button class="search-btn" aria-label="Tìm kiếm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>
+      </button>
+    </div>
+    <div class="header-icons">
+      <a href="login-register.html" class="header-icon-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+        <span>Tài khoản</span>
+      </a>
+      <a href="cart.html" class="header-icon-btn" style="position:relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        <span class="cart-badge" style="display:none">0</span>
+        <span>Giỏ hàng</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <!-- Nav -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-item">
+      <a href="index.html" class="nav-link active">🏠 Trang chủ</a>
+    </div>
+    <div class="nav-item">
+      <a href="category.html" class="nav-link">
+        📚 Sách
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+      </a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h4>Văn học</h4>
+          <a href="category.html">Tiểu thuyết</a>
+          <a href="category.html">Truyện ngắn</a>
+          <a href="category.html">Thơ ca</a>
+          <a href="category.html">Văn học dịch</a>
+          <a href="category.html">Văn học Việt Nam</a>
+        </div>
+        <div class="mega-col">
+          <h4>Kinh tế - Kinh doanh</h4>
+          <a href="category.html">Quản trị kinh doanh</a>
+          <a href="category.html">Marketing</a>
+          <a href="category.html">Tài chính - Kế toán</a>
+          <a href="category.html">Khởi nghiệp</a>
+          <a href="category.html">Phát triển bản thân</a>
+        </div>
+        <div class="mega-col">
+          <h4>Thiếu nhi</h4>
+          <a href="category.html">Truyện tranh</a>
+          <a href="category.html">Truyện cổ tích</a>
+          <a href="category.html">Sách tô màu</a>
+          <a href="category.html">Học tiếng Anh</a>
+        </div>
+        <div class="mega-col">
+          <h4>Khoa học</h4>
+          <a href="category.html">Công nghệ thông tin</a>
+          <a href="category.html">Y học</a>
+          <a href="category.html">Tâm lý học</a>
+          <a href="category.html">Lịch sử</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="flash-sale.html" class="nav-link" style="color:var(--red);font-weight:700">⚡ Flash Sale</a>
+    </div>
+    <div class="nav-item">
+      <a href="#" class="nav-link">
+        🎁 Combo tiết kiệm
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+      </a>
+      <div class="simple-dropdown">
+        <a href="#">Combo 2 cuốn</a>
+        <a href="#">Combo 3 cuốn</a>
+        <a href="#">Combo tặng kèm</a>
+      </div>
+    </div>
+    <div class="nav-item"><a href="blog.html" class="nav-link">✍️ Blog sách</a></div>
+    <div class="nav-item"><a href="about.html" class="nav-link">ℹ️ Giới thiệu</a></div>
+    <div class="nav-item"><a href="contact.html" class="nav-link">📞 Liên hệ</a></div>
+  </div>
+</nav>
+
+  <!-- Mobile menu -->
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <h3>📚 BookStore Menu</h3>
+    <button class="mobile-close">✕</button>
+  </div>
+  <div class="mobile-menu-items">
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="category.html">📚 Tất cả sách</a>
+    <a href="flash-sale.html">⚡ Flash Sale</a>
+    <a href="cart.html">🛒 Giỏ hàng</a>
+    <a href="blog.html">✍️ Blog sách</a>
+    <a href="about.html">ℹ️ Giới thiệu</a>
+    <a href="contact.html">📞 Liên hệ</a>
+    <a href="login-register.html">👤 Đăng nhập</a>
+  </div>
+</div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main>
+
+    <!-- Part 1: Banner -->
+    <section class="policy-banner">
+      <div class="policy-banner__breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>›</span>
+        <span>Chính sách đổi trả</span>
+      </div>
+      <div class="policy-banner__icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+          <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+        </svg>
+      </div>
+      <h1 class="policy-banner__title">Chính Sách <span>Đổi Trả & Hoàn Tiền</span></h1>
+      <p class="policy-banner__subtitle">Cam kết mua sắm an tâm – đổi trả minh bạch, xử lý nhanh chóng trong vòng 24 giờ làm việc.</p>
+    </section>
+
+    <div class="policy-body">
+
+      <!-- Part 2: Return Conditions -->
+      <section class="policy-section">
+        <div class="policy-section__head">
+          <div class="policy-section__num">1</div>
+          <h2 class="policy-section__title">Điều Kiện Được Đổi Trả</h2>
+        </div>
+        <hr class="policy-section__divider" />
+
+        <div class="condition-grid">
+          <div class="condition-card">
+            <div class="condition-card__icon">🔧</div>
+            <div>
+              <div class="condition-card__title">Lỗi nhà sản xuất</div>
+              <div class="condition-card__desc">Sách bị lỗi in ấn: trang mờ, thiếu trang, sai nội dung, bìa bong tróc do lỗi đóng bìa.</div>
+            </div>
+          </div>
+          <div class="condition-card">
+            <div class="condition-card__icon">📦</div>
+            <div>
+              <div class="condition-card__title">Giao sai sản phẩm</div>
+              <div class="condition-card__desc">Nhận được sách khác với sản phẩm đã đặt về tên, tác giả, hoặc phiên bản.</div>
+            </div>
+          </div>
+          <div class="condition-card">
+            <div class="condition-card__icon">💥</div>
+            <div>
+              <div class="condition-card__title">Hư hỏng trong vận chuyển</div>
+              <div class="condition-card__desc">Sách bị móp, rách, ướt hoặc hư hỏng rõ ràng do quá trình giao hàng gây ra.</div>
+            </div>
+          </div>
+          <div class="condition-card">
+            <div class="condition-card__icon">🏷️</div>
+            <div>
+              <div class="condition-card__title">Còn nguyên tem nhãn</div>
+              <div class="condition-card__desc">Sản phẩm chưa qua sử dụng, còn nguyên seal và nhãn dán gốc của nhà xuất bản.</div>
+            </div>
+          </div>
+          <div class="condition-card">
+            <div class="condition-card__icon">🧾</div>
+            <div>
+              <div class="condition-card__title">Có hoá đơn mua hàng</div>
+              <div class="condition-card__desc">Xuất trình được email xác nhận đơn hàng hoặc hoá đơn điện tử từ BookStore.</div>
+            </div>
+          </div>
+          <div class="condition-card">
+            <div class="condition-card__icon">📋</div>
+            <div>
+              <div class="condition-card__title">Trong thời hạn quy định</div>
+              <div class="condition-card__desc">Yêu cầu đổi trả được gửi trong đúng thời hạn theo từng loại sản phẩm (xem bảng bên dưới).</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exclusion-box">
+          <div class="exclusion-box__title">
+            <span>⚠️</span> Các trường hợp KHÔNG được đổi trả
+          </div>
+          <ul>
+            <li>Sách đã bóc seal, đọc hoặc có dấu hiệu qua sử dụng bởi người mua</li>
+            <li>Hư hỏng do người mua tự làm rơi, ướt, gấp trang hoặc viết vào sách</li>
+            <li>Sách mua trong các chương trình Flash Sale giảm giá từ 50% trở lên (trừ lỗi sản xuất)</li>
+            <li>Yêu cầu đổi trả vượt quá thời hạn quy định</li>
+            <li>Không có bằng chứng mua hàng hoặc video mở hộp (áp dụng với đơn hàng trên 500.000₫)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Part 3: Return Process -->
+      <section class="policy-section">
+        <div class="policy-section__head">
+          <div class="policy-section__num">2</div>
+          <h2 class="policy-section__title">Quy Trình Đổi Trả – 4 Bước Đơn Giản</h2>
+        </div>
+        <hr class="policy-section__divider" />
+
+        <div class="steps-wrapper">
+          <div class="step-card">
+            <div class="step-card__bubble">
+              <div class="step-num">Bước 1</div>
+              <div class="step-icon">📞</div>
+            </div>
+            <div class="step-card__title">Liên Hệ BookStore</div>
+            <div class="step-card__desc">Gọi hotline <strong>1800 6236</strong> hoặc nhắn Zalo/email trong giờ hành chính để thông báo yêu cầu đổi trả.</div>
+            <span class="step-card__tag">Trong 24h nhận hàng</span>
+          </div>
+          <div class="step-card">
+            <div class="step-card__bubble">
+              <div class="step-num">Bước 2</div>
+              <div class="step-icon">📦</div>
+            </div>
+            <div class="step-card__title">Đóng Gói Sản Phẩm</div>
+            <div class="step-card__desc">Đóng gói cẩn thận kèm theo hoá đơn và ghi rõ lý do đổi trả bên trong kiện hàng.</div>
+            <span class="step-card__tag">Giữ nguyên phụ kiện</span>
+          </div>
+          <div class="step-card">
+            <div class="step-card__bubble">
+              <div class="step-num">Bước 3</div>
+              <div class="step-icon">🚚</div>
+            </div>
+            <div class="step-card__title">Gửi Hàng Về Kho</div>
+            <div class="step-card__desc">Gửi về địa chỉ kho BookStore đã được cung cấp. Giữ lại biên lai gửi hàng để đối chiếu nếu cần.</div>
+            <span class="step-card__tag">Bất kỳ bưu cục nào</span>
+          </div>
+          <div class="step-card">
+            <div class="step-card__bubble">
+              <div class="step-num">Bước 4</div>
+              <div class="step-icon">✅</div>
+            </div>
+            <div class="step-card__title">Nhận Kết Quả</div>
+            <div class="step-card__desc">Trong vòng <strong>3–5 ngày</strong> làm việc sau khi kho nhận hàng, chúng tôi sẽ gửi sách mới hoặc hoàn tiền.</div>
+            <span class="step-card__tag">3–5 ngày làm việc</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 4: Time & Fees Table -->
+      <section class="policy-section">
+        <div class="policy-section__head">
+          <div class="policy-section__num">3</div>
+          <h2 class="policy-section__title">Thời Hạn & Phí Vận Chuyển Đổi Trả</h2>
+        </div>
+        <hr class="policy-section__divider" />
+
+        <div class="policy-table-wrap">
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th>Danh mục sản phẩm</th>
+                <th>Thời hạn đổi trả</th>
+                <th>Lỗi nhà sản xuất / giao sai</th>
+                <th>Lý do cá nhân</th>
+                <th>Hình thức xử lý</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>📚 Sách văn học / tiểu thuyết</td>
+                <td>7 ngày</td>
+                <td><span class="tag-free">Miễn phí</span></td>
+                <td><span class="tag-customer">Khách hàng chịu</span></td>
+                <td>Đổi sách mới hoặc hoàn tiền</td>
+              </tr>
+              <tr>
+                <td>📘 Sách giáo khoa / học thuật</td>
+                <td>7 ngày</td>
+                <td><span class="tag-free">Miễn phí</span></td>
+                <td><span class="tag-customer">Khách hàng chịu</span></td>
+                <td>Đổi sách mới</td>
+              </tr>
+              <tr>
+                <td>🖊️ Văn phòng phẩm / dụng cụ học tập</td>
+                <td>15 ngày</td>
+                <td><span class="tag-free">Miễn phí</span></td>
+                <td><span class="tag-customer">Khách hàng chịu</span></td>
+                <td>Đổi sản phẩm mới hoặc hoàn tiền</td>
+              </tr>
+              <tr>
+                <td>🎲 Đồ chơi giáo dục / trò chơi trẻ em</td>
+                <td>15 ngày</td>
+                <td><span class="tag-free">Miễn phí</span></td>
+                <td><span class="tag-shared">Chia sẻ 50/50</span></td>
+                <td>Đổi sản phẩm mới</td>
+              </tr>
+              <tr>
+                <td>🎁 Combo / Gift Set</td>
+                <td>7 ngày</td>
+                <td><span class="tag-free">Miễn phí</span></td>
+                <td>Không áp dụng</td>
+                <td>Đổi trọn bộ hoặc hoàn tiền</td>
+              </tr>
+              <tr>
+                <td>⚡ Sản phẩm Flash Sale (&lt; 50% off)</td>
+                <td>3 ngày</td>
+                <td><span class="tag-free">Miễn phí</span></td>
+                <td>Không áp dụng</td>
+                <td>Chỉ đổi sách mới, không hoàn tiền</td>
+              </tr>
+              <tr>
+                <td>📱 Sách điện tử / eBook</td>
+                <td>24 giờ</td>
+                <td><span class="tag-free">Miễn phí</span></td>
+                <td>Không áp dụng</td>
+                <td>Hoàn tiền vào ví BookStore</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:0.8rem;color:var(--gray-500);margin-top:10px;padding-left:4px;">
+          * Thời hạn tính từ ngày khách hàng ký nhận hàng từ đơn vị vận chuyển.
+        </p>
+      </section>
+
+      <!-- Part 5: Important Notes -->
+      <section class="policy-section">
+        <div class="policy-section__head">
+          <div class="policy-section__num">4</div>
+          <h2 class="policy-section__title">Lưu Ý Quan Trọng</h2>
+        </div>
+        <hr class="policy-section__divider" />
+
+        <div class="alert-box" role="alert">
+          <div class="alert-box__header">
+            <div class="alert-box__icon">🎥</div>
+            <div class="alert-box__title">
+              Bắt buộc quay video khi mở hộp
+              <small>Áp dụng cho đơn hàng từ 500.000₫ trở lên hoặc khi yêu cầu đổi trả vì lý do hư hỏng</small>
+            </div>
+          </div>
+          <div class="alert-notes">
+            <div class="alert-note">
+              <div class="alert-note__icon">📹</div>
+              <div><strong>Quay video liên tục</strong> từ lúc nhận gói hàng cho đến khi mở ra hoàn toàn – không cắt ghép, không tạm dừng. Video cần thấy rõ tình trạng bao bì bên ngoài và nội dung bên trong.</div>
+            </div>
+            <div class="alert-note">
+              <div class="alert-note__icon">💾</div>
+              <div><strong>Lưu giữ video ít nhất 15 ngày</strong> kể từ khi nhận hàng. Đây là bằng chứng bắt buộc khi BookStore xử lý khiếu nại hư hỏng hoặc thiếu hàng.</div>
+            </div>
+            <div class="alert-note">
+              <div class="alert-note__icon">🖼️</div>
+              <div><strong>Chụp ảnh bổ sung</strong> tình trạng sản phẩm ngay sau khi mở – chụp rõ trang lỗi, vị trí hư hỏng, nhãn barcode và mã đơn hàng để gửi kèm yêu cầu đổi trả.</div>
+            </div>
+            <div class="alert-note">
+              <div class="alert-note__icon">⏰</div>
+              <div><strong>Không có video hoặc bằng chứng phù hợp</strong>, BookStore có quyền từ chối xử lý yêu cầu đổi trả đối với các trường hợp hư hỏng trong vận chuyển.</div>
+            </div>
+            <div class="alert-note">
+              <div class="alert-note__icon">💳</div>
+              <div><strong>Hoàn tiền</strong> được thực hiện qua phương thức thanh toán gốc hoặc vào ví BookStore trong vòng <strong>5–10 ngày làm việc</strong> tùy ngân hàng/ví điện tử.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Strip -->
+      <div class="cta-strip">
+        <div class="cta-strip__text">
+          <div class="cta-strip__title">Cần hỗ trợ đổi trả?</div>
+          Đội ngũ BookStore hỗ trợ 7 ngày/tuần từ 8:00 – 22:00. Hotline <strong style="color:#fff">1800 6236</strong> (miễn phí).
+        </div>
+        <a href="contact.html" class="btn-primary">Liên hệ ngay</a>
+      </div>
+
+    </div><!-- /policy-body -->
+  </main>
+
+  <!-- Footer -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:16px"><div class="logo-icon">B</div><div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div></a>
+        <p>BookStore – Nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách chính hãng, giao hàng toàn quốc.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">Z</a>
+          <a href="#" class="social-btn">▶</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="return-policy.html">Chính sách đổi trả</a>
+        <a href="privacy-policy.html">Chính sách bảo mật</a>
+        <a href="shopping-guide.html">Hướng dẫn mua hàng</a>
+        <a href="payment-guide.html">Hướng dẫn thanh toán</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Về chúng tôi</h4>
+        <a href="about.html">Giới thiệu</a>
+        <a href="blog.html">Blog sách</a>
+      </div>
+      <div class="footer-col">
+        <h4>Đăng ký nhận ưu đãi</h4>
+        <p style="font-size:.85rem;margin-bottom:10px">Nhận thông tin sách mới & khuyến mãi mỗi tuần.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email của bạn..." />
+          <button>Đăng ký</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💳 Visa/MC</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">📱 MoMo</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💵 COD</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">🏦 ATM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 BookStore. Giấy phép kinh doanh số 0123456789 – Sở KH&amp;ĐT TP.HCM.</div>
+</footer>
+
+  <!-- Bottom Nav -->
+  <div id="bottom-nav-mount"></div>
+
+  <!-- Scripts -->
+<script src="books-data.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

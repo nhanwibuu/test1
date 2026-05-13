@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên hệ – BookStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-hotline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+        Hotline: <a href="tel:18006236">1800 6236</a>
+      </span>
+      <a href="index.html">Cửa hàng</a>
+      <a href="about.html">Giới thiệu</a>
+    </div>
+    <div class="topbar-right">
+      <a href="return-policy.html">Chính sách đổi trả</a>
+      <a href="order-lookup.html">Tra cứu đơn hàng</a>
+      <a href="login-register.html">Đăng nhập</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="header-inner">
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div>
+    </a>
+    <div class="header-search">
+      <input type="text" placeholder="Tìm kiếm sách, tác giả, nhà xuất bản..." autocomplete="off"/>
+      <button class="search-btn" aria-label="Tìm kiếm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/></svg>
+      </button>
+    </div>
+    <div class="header-icons">
+      <a href="login-register.html" class="header-icon-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+        <span>Tài khoản</span>
+      </a>
+      <a href="cart.html" class="header-icon-btn" style="position:relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        <span class="cart-badge" style="display:none">0</span>
+        <span>Giỏ hàng</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- NAVIGATION -->
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-item">
+      <a href="index.html" class="nav-link">🏠 Trang chủ</a>
+    </div>
+    <div class="nav-item">
+      <a href="category.html" class="nav-link">
+        📚 Sách
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+      </a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h4>Văn học</h4>
+          <a href="category.html">Tiểu thuyết</a>
+          <a href="category.html">Truyện ngắn</a>
+          <a href="category.html">Thơ ca</a>
+          <a href="category.html">Văn học dịch</a>
+          <a href="category.html">Văn học Việt Nam</a>
+        </div>
+        <div class="mega-col">
+          <h4>Kinh tế - Kinh doanh</h4>
+          <a href="category.html">Quản trị kinh doanh</a>
+          <a href="category.html">Marketing</a>
+          <a href="category.html">Tài chính - Kế toán</a>
+          <a href="category.html">Khởi nghiệp</a>
+          <a href="category.html">Phát triển bản thân</a>
+        </div>
+        <div class="mega-col">
+          <h4>Thiếu nhi</h4>
+          <a href="category.html">Truyện tranh</a>
+          <a href="category.html">Truyện cổ tích</a>
+          <a href="category.html">Sách tô màu</a>
+          <a href="category.html">Học tiếng Anh</a>
+        </div>
+        <div class="mega-col">
+          <h4>Khoa học</h4>
+          <a href="category.html">Công nghệ thông tin</a>
+          <a href="category.html">Y học</a>
+          <a href="category.html">Tâm lý học</a>
+          <a href="category.html">Lịch sử</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="flash-sale.html" class="nav-link" style="color:var(--red);font-weight:700">⚡ Flash Sale</a>
+    </div>
+    <div class="nav-item"><a href="blog.html" class="nav-link">✍️ Blog sách</a></div>
+    <div class="nav-item"><a href="about.html" class="nav-link">ℹ️ Giới thiệu</a></div>
+    <div class="nav-item"><a href="contact.html" class="nav-link active">📞 Liên hệ</a></div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <h3>📚 BookStore Menu</h3>
+    <button class="mobile-close">✕</button>
+  </div>
+  <div class="mobile-menu-items">
+    <a href="index.html">🏠 Trang chủ</a>
+    <a href="category.html">📚 Tất cả sách</a>
+    <a href="flash-sale.html">⚡ Flash Sale</a>
+    <a href="cart.html">🛒 Giỏ hàng</a>
+    <a href="blog.html">✍️ Blog sách</a>
+    <a href="about.html">ℹ️ Giới thiệu</a>
+    <a href="contact.html">📞 Liên hệ</a>
+    <a href="login-register.html">👤 Đăng nhập</a>
+  </div>
+</div>
+
+<div class="page-header">
+  <div class="container">
+    <h1>📞 Liên hệ với chúng tôi</h1>
+    <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn mọi lúc, mọi nơi</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">Trang chủ</a><span class="breadcrumb-sep">›</span>
+    <span>Liên hệ</span>
+  </div>
+
+  <div class="contact-layout">
+    <!-- LEFT: Info + Map -->
+    <div>
+      <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:20px">Thông tin liên hệ</h2>
+      <div class="contact-info-cards">
+        <div class="contact-info-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Hotline hỗ trợ</h4>
+            <p><a href="tel:18006236" style="color:var(--red);font-weight:600;font-size:1.05rem">1800 6236</a> (Miễn phí, 8:00 – 21:30)</p>
+            <p style="margin-top:2px"><a href="tel:02839261234" style="color:var(--gray-700)">028 3926 1234</a> (Doanh nghiệp)</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:hotro@bookstore.vn" style="color:var(--red)">hotro@bookstore.vn</a> (Khách hàng)</p>
+            <p style="margin-top:2px"><a href="mailto:business@bookstore.vn" style="color:var(--gray-500)">business@bookstore.vn</a> (Hợp tác)</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Trụ sở chính – TP. Hồ Chí Minh</h4>
+            <p>123 Đường Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP. HCM</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <h4>Giờ làm việc</h4>
+            <p>Thứ 2 – Thứ 6: <b>8:00 – 21:30</b></p>
+            <p style="margin-top:2px">Thứ 7 – Chủ nhật: <b>8:00 – 22:00</b></p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">💬</div>
+          <div>
+            <h4>Mạng xã hội</h4>
+            <p>Facebook: <a href="#" style="color:var(--red)">fb.com/BookStoreVN</a></p>
+            <p style="margin-top:2px">Zalo OA: <a href="#" style="color:var(--red)">BookStore Official</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <h3 style="font-size:1rem;font-weight:700;margin-bottom:12px">📍 Tìm chúng tôi trên bản đồ</h3>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.444955001989!2d106.70183981533417!3d10.771778362004644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0x6a9b7f01e4f4e4a0!2zTmd1eeG7hW4gSHXhu4csIELhur9uIE5naMOpLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1701234567890!5m2!1sen!2s"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="BookStore Location">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact Form -->
+    <div>
+      <div class="contact-form-card">
+        <h2>Gửi tin nhắn cho chúng tôi</h2>
+        <p style="font-size:.87rem;color:var(--gray-500);margin-bottom:24px">Chúng tôi sẽ phản hồi trong vòng 24 giờ làm việc.</p>
+
+        <div class="form-group" style="margin-bottom:16px">
+          <label>Họ và tên *</label>
+          <input type="text" id="ctName" placeholder="Nguyễn Văn A">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px">
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" id="ctEmail" placeholder="email@example.com">
+          </div>
+          <div class="form-group">
+            <label>Số điện thoại</label>
+            <input type="tel" id="ctPhone" placeholder="0901 234 567">
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:16px">
+          <label>Chủ đề *</label>
+          <select id="ctSubject">
+            <option value="">Chọn chủ đề...</option>
+            <option>Hỗ trợ đơn hàng</option>
+            <option>Khiếu nại sản phẩm</option>
+            <option>Hợp tác kinh doanh</option>
+            <option>Nhượng quyền</option>
+            <option>Truyền thông / PR</option>
+            <option>Khác</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:16px">
+          <label>Nội dung *</label>
+          <textarea id="ctMessage" rows="5" placeholder="Mô tả chi tiết vấn đề hoặc yêu cầu của bạn..."></textarea>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
+          <input type="checkbox" id="ctConsent" style="accent-color:var(--red);width:17px;height:17px">
+          <label for="ctConsent" style="font-size:.83rem;color:var(--gray-700);cursor:pointer">
+            Tôi đồng ý để BookStore liên hệ lại với tôi theo thông tin đã cung cấp
+          </label>
+        </div>
+        <button class="btn-primary" onclick="submitContact()" style="width:100%;justify-content:center;padding:14px">
+          📩 Gửi tin nhắn
+        </button>
+      </div>
+
+      <!-- FAQ Quick -->
+      <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:24px;border:1px solid var(--gray-200);margin-top:20px">
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px">❓ Câu hỏi thường gặp</h3>
+        <div id="faqList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORE SYSTEM -->
+<div class="store-system-section" style="padding:48px 0; background-color: var(--gray-50);">
+  <div style="text-align:center; margin-bottom:32px">
+    <h2 style="font-family:var(--font-display); font-size:1.7rem; font-weight:700; margin-bottom:8px">🏪 Hệ thống cửa hàng</h2>
+    <p style="color:var(--gray-500)">48 cửa hàng trên toàn quốc – Luôn có một BookStore gần bạn</p>
+  </div>
+
+  <div class="store-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px; max-width:1200px; margin:0 auto; padding:0 20px;">
+    
+    <div style="padding:20px; background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius-md); transition:box-shadow .25s" onmouseover="this.style.boxShadow='var(--shadow-sm)'" onmouseout="this.style.boxShadow='none'">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+        <h4 style="font-weight:700; font-size:.95rem">📍 TP. Hồ Chí Minh</h4>
+        <span style="background:var(--red-pale); color:var(--red); font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:10px">18 cửa hàng</span>
+      </div>
+      <p style="font-size:.82rem; color:var(--gray-500); line-height:1.6">123 Nguyễn Huệ, Q.1 · 456 Lê Lợi, Q.3 · 789 CMT8, Q.10 · và 15 chi nhánh khác</p>
+    </div>
+
+    <div style="padding:20px; background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius-md); transition:box-shadow .25s" onmouseover="this.style.boxShadow='var(--shadow-sm)'" onmouseout="this.style.boxShadow='none'">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+        <h4 style="font-weight:700; font-size:.95rem">📍 Hà Nội</h4>
+        <span style="background:var(--red-pale); color:var(--red); font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:10px">12 cửa hàng</span>
+      </div>
+      <p style="font-size:.82rem; color:var(--gray-500); line-height:1.6">12 Đinh Tiên Hoàng, HK · 34 Tràng Tiền, HK · 56 Bà Triệu, HBT · và 9 chi nhánh khác</p>
+    </div>
+
+    <div style="padding:20px; background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius-md); transition:box-shadow .25s" onmouseover="this.style.boxShadow='var(--shadow-sm)'" onmouseout="this.style.boxShadow='none'">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+        <h4 style="font-weight:700; font-size:.95rem">📍 Đà Nẵng</h4>
+        <span style="background:var(--red-pale); color:var(--red); font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:10px">6 cửa hàng</span>
+      </div>
+      <p style="font-size:.82rem; color:var(--gray-500); line-height:1.6">78 Bạch Đằng, Hải Châu · 90 Nguyễn Văn Linh, Hải Châu · và 4 chi nhánh khác</p>
+    </div>
+
+    <div style="padding:20px; background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius-md); transition:box-shadow .25s" onmouseover="this.style.boxShadow='var(--shadow-sm)'" onmouseout="this.style.boxShadow='none'">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+        <h4 style="font-weight:700; font-size:.95rem">📍 Cần Thơ</h4>
+        <span style="background:var(--red-pale); color:var(--red); font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:10px">4 cửa hàng</span>
+      </div>
+      <p style="font-size:.82rem; color:var(--gray-500); line-height:1.6">11 Hòa Bình, Ninh Kiều · 22 Trần Phú, Ninh Kiều · và 2 chi nhánh khác</p>
+    </div>
+
+    <div style="padding:20px; background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius-md); transition:box-shadow .25s" onmouseover="this.style.boxShadow='var(--shadow-sm)'" onmouseout="this.style.boxShadow='none'">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+        <h4 style="font-weight:700; font-size:.95rem">📍 Hải Phòng</h4>
+        <span style="background:var(--red-pale); color:var(--red); font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:10px">4 cửa hàng</span>
+      </div>
+      <p style="font-size:.82rem; color:var(--gray-500); line-height:1.6">33 Điện Biên Phủ, Lê Chân · 44 Tô Hiệu, Lê Chân · và 2 chi nhánh khác</p>
+    </div>
+
+    <div style="padding:20px; background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius-md); transition:box-shadow .25s" onmouseover="this.style.boxShadow='var(--shadow-sm)'" onmouseout="this.style.boxShadow='none'">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px">
+        <h4 style="font-weight:700; font-size:.95rem">📍 Các tỉnh khác</h4>
+        <span style="background:var(--red-pale); color:var(--red); font-size:.75rem; font-weight:700; padding:2px 8px; border-radius:10px">4 cửa hàng</span>
+      </div>
+      <p style="font-size:.82rem; color:var(--gray-500); line-height:1.6">Bình Dương · Đồng Nai · Huế · Nha Trang – Mỗi tỉnh 1 cửa hàng</p>
+    </div>
+
+  </div>
+</div>
+</div>
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:16px"><div class="logo-icon">B</div><div class="logo-text">BookStore<span>Nhà sách trực tuyến</span></div></a>
+        <p>BookStore – Nhà sách trực tuyến hàng đầu Việt Nam với hơn 1 triệu đầu sách chính hãng, giao hàng toàn quốc.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">Z</a>
+          <a href="#" class="social-btn">▶</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="return-policy.html">Chính sách đổi trả</a>
+        <a href="privacy-policy.html">Chính sách bảo mật</a>
+        <a href="shopping-guide.html">Hướng dẫn mua hàng</a>
+        <a href="payment-guide.html">Hướng dẫn thanh toán</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Về chúng tôi</h4>
+        <a href="about.html">Giới thiệu</a>
+        <a href="blog.html">Blog sách</a>
+      </div>
+      <div class="footer-col">
+        <h4>Đăng ký nhận ưu đãi</h4>
+        <p style="font-size:.85rem;margin-bottom:10px">Nhận thông tin sách mới & khuyến mãi mỗi tuần.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email của bạn..." />
+          <button>Đăng ký</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💳 Visa/MC</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">📱 MoMo</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">💵 COD</span>
+          <span style="background:rgba(255,255,255,.1);padding:4px 10px;border-radius:4px;font-size:.75rem">🏦 ATM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 BookStore. Giấy phép kinh doanh số 0123456789 – Sở KH&amp;ĐT TP.HCM.</div>
+</footer>
+
+<!-- BOTTOM NAVIGATION -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="index.html" class="bottom-nav-item active">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6-.093.1V14.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V10h2v4.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V7.246l-.093-.1-6-6z"/></svg>
+      <span>Trang chủ</span>
+    </a>
+    <a href="category.html" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg>
+      <span>Danh mục</span>
+    </a>
+    <a href="flash-sale.html" class="bottom-nav-item" style="color:var(--red)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg>
+      <span>Sale</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" style="position:relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+      <span class="bnav-badge" style="display:none">0</span>
+      <span>Giỏ hàng</span>
+    </a>
+    <a href="login-register.html" class="bottom-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4z"/></svg>
+      <span>Tài khoản</span>
+    </a>
+  </div>
+</nav>
+
+<!-- SCRIPTS -->
+<script src="books-data.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+
